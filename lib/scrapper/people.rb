@@ -1,5 +1,5 @@
-require'nokogiri'
-require 'open-uri'
+require_relative'sharereq'
+
 class People
     def initialize(url)
         doc  = Nokogiri::HTML(open(url))
@@ -13,7 +13,8 @@ class People
             new_lists.each do |l|
                 names = l.css('b').text
                 if names.include? item_name
-                    puts l.text
+                    val = l.text
+                    return val.gsub("#{item_name}", ' ')
                 else 
                 end
             end
@@ -24,10 +25,42 @@ class People
         return ul_tag('Name:')
     end
 
+    def romanji_name
+        return ul_tag('Name (romaji):')
+    end
+
     def person_e_name
         return ul_tag('English name:')
     end
     def proffession 
        return ul_tag('Profession:')
     end 
-end
+
+    def birthdate
+        return ul_tag('Birthdate:') 
+    end
+   def birthplace
+    return ul_tag('Birthplace:')
+   end 
+
+   def height
+    return ul_tag('Height:')
+   end 
+
+   def weight 
+    return ul_tag('Weight:')
+   end 
+
+   def star_sign
+    return ul_tag('Star sign:')
+   end 
+
+   def blood_type
+    return ul_tag('Blood type:')
+   end 
+
+   def talent_agency
+    return ul_tag('Talent agency:')
+   end 
+
+end 

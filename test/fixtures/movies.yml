@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  title_romaji: MyString
+  title_English: MyString
+  also_known_as: MyString
+  genre: MyString
+  episodes: MyString
+  format: MyString
+  broadcast_network: MyString
+  broadcast_period: MyString
+  air_time: MyString
+  viewrship_rating: MyString
+  theme_song: MyString
+  broadcast_year: MyString
+  tagline: MyString
+  cantonese_mandarin_title: MyString
+
+two:
+  title: MyString
+  title_romaji: MyString
+  title_English: MyString
+  also_known_as: MyString
+  genre: MyString
+  episodes: MyString
+  format: MyString
+  broadcast_network: MyString
+  broadcast_period: MyString
+  air_time: MyString
+  viewrship_rating: MyString
+  theme_song: MyString
+  broadcast_year: MyString
+  tagline: MyString
+  cantonese_mandarin_title: MyString

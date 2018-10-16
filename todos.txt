@@ -1,0 +1,35 @@
+[back end (api)]
+    models
+        People
+        Movies
+    Scrapper 
+        main Scrapper
+        People Scrapper
+        Movie Scrapper
+        // Article Scrapper
+        // Theme Songs Scrapper
+        // Image Scrapper
+
+
+    Controllesrs 
+        Peoples Controller
+        Movies Controller
+        Search Controller
+
+[ front end (vuejs)]
+
+    User Authentication (firebase auth)
+        Google plus
+        twitter
+        facebook
+    Badges System
+        gold 
+        silver
+        bronze 
+    user activities
+        Review
+        add movie to watch-list
+
+
+
+
