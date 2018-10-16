@@ -36,19 +36,6 @@ class Scrapper
     def run_people(url)
         people = People.new(url)
 
-#         Person.create(
-# people.person_e_name
-#         people.person_name
-#         people.proffession 
-#         people.birthdate
-#         people.birthplace
-#         people.height
-#         people.weight
-#         people.star_sign
-#         people.blood_type
-#         people.talent_agency
-#         )
-
         Person.new(
             stage_name: people.person_e_name,
             full_name: people.person_name,

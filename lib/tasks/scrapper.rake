@@ -4,6 +4,7 @@ namespace :scrapper do
   desc "TODO"
   task wiki_drama: :environment do
     require './lib/scrapper/scrapper'
+    begin 
     
     Spidr.site('https://wiki.d-addicts.com') do |spider|
       spider.every_url do |url| 
@@ -13,6 +14,16 @@ namespace :scrapper do
        # now save data to array and then push to json
       end 
     end
+    rescue Mechanize::ResponseCodeError   => e 
+
+    puts "404 error , won't stop me "
+    next 
+
+  rescue NoMethodError =>a
+    puts "NoMethodError shall never stop me "
+    next
+      
+  end 
 
     class Scrapper
     def initialize(url)
